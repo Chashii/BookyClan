@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookyClan</title>
+    <link rel = "icon" type = "image/x-icon" href = "logo.png">
+    <script src="https://kit.fontawesome.com/276b7cea44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="menu-icon" onclick="openNav()">☰</div>
+            <nav class="nav-items">
+                <a href="#top">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <div class = "dropdown">
+                    <a>⌄ GAMES</a>
+                    <div class = "dropdown-content">
+                        <a href = "valorantGames.html">Valorant</a>
+                        <a href = "HOKGames.html">Honor of Kings</a>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="#top">
+                        <img src="logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class = "dropdown">
+                    <a>TEAMS ⌄</a>
+                    <div class = "dropdown-content">
+                        <a href = "valorantTeams.html">Valorant</a>
+                        <a href = "HOKTeams.html">Honor of Kings</a>
+                    </div>
+                </div>
+                <a href="news.html">NEWS</a>
+                <a href="bookyshop.html">BOOKY SHOP</a>
+            </nav>
+        </div>
+    </header>
+    <div id="side-nav" class="side-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="logo">
+            <a href="#top">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+        <a href="#home">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <div class = "dropdown">
+            <a>GAMES ⌄</a>
+            <div class = "dropdown-content">
+                <a href = "valorantGames.html">Valorant</a>
+                <a href = "HOKGames.html">Honor of Kings</a>
+            </div>
+        </div>
+        <div class = "dropdown">
+            <a>TEAMS ⌄</a>
+            <div class = "dropdown-content">
+                <a href = "valorantTeams.html">Valorant</a>
+                <a href = "HOKTeams.html">Honor of Kings</a>
+            </div>
+        </div>
+        <a href="news.html">NEWS</a>
+        <a href="bookyshop.html">BOOKY SHOP</a>
+    </div>
+
+    </header>
+
+        <div class = "banner-wrapper">
+            <div class="banner-16-9-1">
+                <img src="HorizontalBanner.gif" alt="16:9 Banner Image">
+                <div class="carousels">
+                    <div class="carousel" id="carousel1">
+                        <div class="carousel-inner">
+                            <div class="carousel-item"><img src="OrgAbout1.png" alt="Image 1"></div>
+                            <div class="carousel-item"><img src="OrgAbout2.png" alt="Image 2"></div>
+                        </div>
+                        <button class="prev" onclick="prevSlide(1)">&#10094;</button>
+                        <button class="next" onclick="nextSlide(1)">&#10095;</button>
+                    </div>
+                    <div class="carousel" id="carousel2">
+                        <div class="carousel-inner">
+                            <div class="carousel-item"><img src="Teams1.png" alt="Image 4"></div>
+                            <div class="carousel-item"><img src="Teams2.png" alt="Image 5"></div>
+                            <div class="carousel-item"><img src="Teams3.png" alt="Image 6"></div>
+                        </div>
+                        <button class="prev" onclick="prevSlide(2)">&#10094;</button>
+                        <button class="next" onclick="nextSlide(2)">&#10095;</button>
+                    </div>
+                </div>
+                <div class = "carousels">
+                    <div class="carousel" id="carousel3">
+                        <div class="carousel-inner">
+                            <div class="carousel-item"><img src="News.png" alt="Image 7"></div>
+                            <div class="carousel-item"><img src="News.png" alt="Image 8"></div>
+                        </div>
+                        <button class="prev" onclick="prevSlide(3)">&#10094;</button>
+                        <button class="next" onclick="nextSlide(3)">&#10095;</button>
+                    </div>
+                    <div class="carousel" id="carousel4">
+                        <div class="carousel-inner">
+                            <div class="carousel-item"><img src="BookyShop1.png" alt="Image 7"></div>
+                            <div class="carousel-item"><img src="BookyShop2.png" alt="Image 8"></div>
+                        </div>
+                        <button class="prev" onclick="prevSlide(4)">&#10094;</button>
+                        <button class="next" onclick="nextSlide(4)">&#10095;</button>
+                    </div>
+                </div>
+                <div class = "sponsor-container">
+                    <p>SPONSORS:</p>
+                </div>
+                <div class = "gif-container">
+                    <a href = "#"><img src="BCSPONSORS.png" alt="Description of image" style = "max-width: 100%;"></a>
+                    <a href = "https://partner.bybit.com/b/49639" target = "_blank"><img src="BYBIT.png" alt="Description of image" style = "max-width: 100%;"></a>
+                    <a href = "https://www.bookyrivals.com" target = "_blank"><img src="BRIVALS.png" alt="Description of image" style = "max-width: 100%;"></a>
+                    <a href = "#" target = "_blank"><img src="Placeholder.png" alt="Description of image" style = "max-width: 100%;"></a>
+                </div>
+            </div>
+            <div class="banner-wrapper">
+                <div class="banner-16-9">
+                    <a href = "https://www.bookyrivals.com" target = "_blank"><img src="Bookyrivals-sidebanner.gif" alt="16:9 Banner Image"></a>
+                    <div class="banner-wrapper">
+                        <div class="banner-16-9">
+                            <a href = "https://www.bookyrivals.com" target = "_blank"><img src="Bookyclan-Sidebanner.gif" alt="16:9 Banner Image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <div class="logo2">
+                        <a href="#top">
+                            <img src="logo 2.png" alt="Logo2">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section" id = "showcase">
+                    <h3>SHOWCASE ⌄</h3>
+                    <ul>
+                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" id = "about-us">
+                    <h3>ABOUT US ⌄</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Sponsors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" id = "company">
+                    <h3>COMPANY ⌄</h3>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookie Settings</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <a href="https://discord.gg/kkeFN4YV" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.facebook.com/bookyrvls" target = "_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bookyrivals/" target = "_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://t.me/bookyrivals" target = "_blank"><i class="fa fa-telegram"></i></a>
+                <a href="https://x.com/booky_rivals" target = "_blank"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="footer-bottom">
+                © Copyright. All rights reserved.
+            </div>
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+</body>
+</html>
